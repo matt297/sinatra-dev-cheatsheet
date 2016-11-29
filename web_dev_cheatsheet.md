@@ -34,7 +34,7 @@
     - [Model validations](#model-validations)
     - [Updating values](#updating-values)
   1. [Git](#git)
-  1. [Herokou](#heroku)
+  1. [Heroku](#heroku)
 
 
 ## HTML
