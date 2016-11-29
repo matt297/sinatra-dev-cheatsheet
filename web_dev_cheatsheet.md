@@ -23,6 +23,7 @@
     - [Instance variables](#instance-variables)
     - [Partials](#partials)
     - [Helper methods](#helper-methods)
+    - [Form data](#form-data)
   1. [Git](#git)
 
 
@@ -441,5 +442,35 @@ end
 
 Hello there! Welcome and good <%= time_of_day %> to you!
 ```
+
+
+### Form data
+
+When you want to get user input, you use a form. Sinatra has some fun and helpful ways to let us easily access form data submitted by a user! To start, you define a form in your erb file, making sure to specify a `method` and an `action`. The method represents _how_ the data will be sent, and the action represents _where_ the data will be sent.
+
+| Method | Description | When to use |
+| ------ | ----------- | ----------- |
+| GET | Values appear in the URL | Performing searches or filtering |
+| POST | Values are sent silently/hidden | Submitting sensitive data, or when the form will change/save something in your application |
+
+Inside an ERB file, a form would look like this:
+
+```html
+<form method="post" action="/signup">
+  <label for="first-name">
+  <input type="text" name="first-name" id="first-name">
+  
+  <button>Submit</button>
+</form>
+```
+
+Then, in your `actions.rb` file, you would create a new URL that accepts incoming `POST` requests, like so:
+
+```ruby
+post '/signup' do
+  # Process the form
+end
+
+
 
 ## Git
