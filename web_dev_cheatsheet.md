@@ -330,7 +330,7 @@ get '/' do
 end
 ```
 
-```ruby
+```html
 <!-- Inside your homepage.erb file -->
 
 The current day and time is: <%= @time_of_day %>
