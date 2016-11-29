@@ -14,7 +14,7 @@
   1. [Ruby](#ruby)
     - [Data types](#data-types)
     - [Complex data stores](#complex-data-stores)
-    - [Logical operators](#logical-operators)
+    - [Logic and conditions](#logic-and-conditions)
 
 
 ## HTML
@@ -205,11 +205,19 @@ person['name']
 ```
 
 
-### Logical operators
+### Logi and conditions
 
 Often times when programming, we need to perform logic, or create a set of conditions for a particular thing to happen. In ruby, this can be done in a variety of ways. The most common, is using an if/else block.
 
 ```ruby
+# Simple with only one condition
+if seconds > 60
+  'More than 1 minute ago.'
+else
+  'Less than 1 minute ago.'
+end
+
+# More complex, with a few possibilities
 if time_of_day == 'Morning'
   'Good morning!'
 elsif time_of_day == 'Afternoon'
