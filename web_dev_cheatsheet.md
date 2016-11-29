@@ -60,6 +60,7 @@ These tags are used to insert interactive and fun elements into your page (so th
 | `<input type="email">` | An email field | No | [Link](http://www.w3schools.com/tags/tag_input.asp) |
 | `<label>` | Input field label | No | [Link](http://www.w3schools.com/tags/tag_label.asp) |
 | `<button>` | A button | Yes | [Link](http://www.w3schools.com/tags/tag_button.asp) |
+| `<table>` | A table of data | Yes | [Link](http://www.w3schools.com/tags/tag_table.asp) |
 | `<ol>` | Ordered (numbered) list | Yes | [Link](http://www.w3schools.com/tags/tag_ol.asp) |
 | `<ul>` | Unordered (bulleted) list | Yes | [Link](http://www.w3schools.com/tags/tag_ul.asp) |
 | `<li>` | List item (within a `ol`/`ul`) | Yes | [Link](http://www.w3schools.com/tags/tag_li.asp) |
