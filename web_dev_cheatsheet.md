@@ -12,6 +12,7 @@
     - [Rule delcarations](#rule-declarations)
     - [Selectors](#selectors)
   1. [Ruby](#ruby)
+    - [Ruby bascis](#ruby-basics)
     - [Data types](#data-types)
     - [Complex data stores](#complex-data-stores)
     - [Logical operators](#logical-operators)
@@ -33,6 +34,7 @@
     - [Model validations](#model-validations)
     - [Updating values](#updating-values)
   1. [Git](#git)
+  1. [Herokou](#heroku)
 
 
 ## HTML
@@ -174,6 +176,11 @@ To apply different styles for different screen sizes (i.e. mobile device vs. a d
 
 
 ## Ruby
+
+
+# Ruby basics
+
+For a more comprehensive guide to the very very basics of ruby, refer to [this guide](https://gist.github.com/matt297/055ee0b28c2bd79aa9783359d83f4906).
 
 
 ### Data types
@@ -634,24 +641,29 @@ user.save
 
 ## Git
 
-When performing Git operations, you do them from within the `bash` window.
+When performing Git operations, you do them from within the `bash` window. In the majority of cases, when you're done working on the code for a particular set of features, you will do the following:
 
-*Step 1:* Check file status
+**Step 1:** Check file status
 ```
 git status
 ```
 
-*Step 2:* Stage your files (prepare them to be committed)
+**Step 2:** Stage your files (prepare them to be committed)
 ```
 git add .
 ```
 
-*Step 3:* Commit your changes
+**Step 3:** Commit your changes
 ```
 git commit -m "Description of your changes."
 ```
 
-*Step 4:* Push your changes to GitHub
+**Step 4:** Push your changes to GitHub
 ```
 git push origin/master
 ```
+
+
+## Heroku
+
+Details on pushing to Heroku and updating your app with new changes can be found [in this guide](https://gist.github.com/matt297/dfc9a2c7e6c13516a767879f2ceb724e).
