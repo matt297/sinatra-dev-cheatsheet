@@ -329,6 +329,14 @@ get '/' do
 end
 ```
 
+You can also pass values into your `actions.rb` file by using variables in the URL. When you create variables in the URL, you can then get to them from within ruby using `params[:variable_name]`, like you do for form data. For instance, perhaps you wanted to edit a particular user. You might want to have unique edit links for each user, so you can pass them around between the various website administrators. Your `actions.rb` file might look like this:
+
+```ruby
+get '/user/:id/edit` do
+  # When someone visits "yoursite.com/users/5/edit", the value of "params[:id]" would be "5"
+end
+```
+
 
 ### Using a layout
 
@@ -616,7 +624,7 @@ _For a full list of all possible built-in validations, refer to [this guide](htt
 
 The web isn't static, which necessitates having the ability to edit data after you've saved it to the database! With ActiveRecord, this is super easy! Let's say you wanted to update the name and address for a user in your database. You would start by locating their user ID, open up `bundle exec tux`, and then do the following:
 
-```
+```ruby
 user = User.find(5)
 user.name = 'New Name'
 user.address = 'New Address'
@@ -625,3 +633,25 @@ user.save
 
 
 ## Git
+
+When performing Git operations, you do them from within the `bash` window.
+
+*Step 1:* Check file status
+```
+git status
+```
+
+*Step 2:* Stage your files (prepare them to be committed)
+```
+git add .
+```
+
+*Step 3:* Commit your changes
+```
+git commit -m "Description of your changes."
+```
+
+*Step 4:* Push your changes to GitHub
+```
+git push origin/master
+```
