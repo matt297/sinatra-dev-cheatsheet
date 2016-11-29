@@ -35,8 +35,12 @@ _Tip: You can open HTML files directly in your browser without the need for Sina
 
 | HTML Tag | Requires Closing Tag | Purpose | More Info |
 | -------- | -------------------- | ------- | --------- |
-| `<p>` | Yes | Creates a paragraph of text | [Link](http://www.w3schools.com/tags/tag_p.asp) |
+| `<p>` | Yes | Paragraph of text | [Link](http://www.w3schools.com/tags/tag_p.asp) |
 | `<br>` | No | Line break/pushes content to next line | [Link](http://www.w3schools.com/tags/tag_br.asp) |
+| `<strong>` | Yes | Bold text | [Link](http://www.w3schools.com/tags/tag_strong.asp) |
+| `<em>` | Yes | Italic/emphasized text | [Link](http://www.w3schools.com/tags/tag_em.asp) |
+| `<u>` | Yes | Underlined text | [Link](http://www.w3schools.com/tags/tag_u.asp) |
+| `<s>` | Yes | Strikethrough text | [Link](http://www.w3schools.com/tags/tag_s.asp) |
 
 ## CSS
 
