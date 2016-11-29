@@ -37,7 +37,7 @@ _Tip: You can open HTML files directly in your browser without the need for Sina
 
 The following tags are used to format text and paragraphs.
 
-| HTML Tag | Purpose | Requires Closing Tag | Info/Example |
+| HTML Tag | Purpose | Needs Closing Tag | Info/Example |
 | -------- | ------- | -------------------- | --------- |
 | `<p>` | Paragraph of text | Yes | [Link](http://www.w3schools.com/tags/tag_p.asp) |
 | `<br>` | Line break/pushes content to next line | No | [Link](http://www.w3schools.com/tags/tag_br.asp) |
@@ -50,7 +50,7 @@ The following tags are used to format text and paragraphs.
 
 These tags are used to insert interactive and fun elements into your page (so that it's more than just plain text).
 
-| HTML Tag | Purpose | Requires Closing Tag | Info/Example |
+| HTML Tag | Purpose | Needs Closing Tag | Info/Example |
 | -------- | ------- | -------------------- | --------- |
 | `<a href="http://google.com">Link text</a>` | Link to another page | Yes | [Link](http://www.w3schools.com/tags/tag_a.asp) |
 | `<img src="http://google.com/image.jpg">` | Displays an image | No | [Link](http://www.w3schools.com/tags/tag_img.asp) |
@@ -67,7 +67,7 @@ These tags are used to insert interactive and fun elements into your page (so th
 
 The following tags are used to provide structure and are largely used for semantics (i.e. to help a screen reader or a search engine better understand the content on our pages).
 
-| HTML Tag | Purpose | Requires Closing Tag | Info/Example |
+| HTML Tag | Purpose | Needs Closing Tag | Info/Example |
 | -------- | ------- | -------------------- | --------- |
 | `<header>` | Header content | Yes | [Link](http://www.w3schools.com/tags/tag_header.asp) |
 | `<nav>` | Navigation/menu content | Yes | [Link](http://www.w3schools.com/tags/tag_nav.asp) |
