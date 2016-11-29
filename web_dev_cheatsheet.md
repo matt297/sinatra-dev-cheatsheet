@@ -35,12 +35,12 @@ _Tip: You can open HTML files directly in your browser without the need for Sina
 
 | HTML Tag | Purpose | Requires Closing Tag | More Info |
 | -------- | ------- | -------------------- | --------- |
-| `<p>` | Paragraph of text | Yes | [Link](http://www.w3schools.com/tags/tag_p.asp) |
+| `<p></p>` | Paragraph of text | Yes | [Link](http://www.w3schools.com/tags/tag_p.asp) |
 | `<br>` | Line break/pushes content to next line | No | [Link](http://www.w3schools.com/tags/tag_br.asp) |
-| `<strong>` | Bold text | Yes | [Link](http://www.w3schools.com/tags/tag_strong.asp) |
-| `<em>` | Italic/emphasized text | Yes | [Link](http://www.w3schools.com/tags/tag_em.asp) |
-| `<u>` | Underlined text | Yes | [Link](http://www.w3schools.com/tags/tag_u.asp) |
-| `<s>` | Strikethrough text | Yes | [Link](http://www.w3schools.com/tags/tag_s.asp) |
+| `<strong></strong>` | Bold text | Yes | [Link](http://www.w3schools.com/tags/tag_strong.asp) |
+| `<em></em>` | Italic/emphasized text | Yes | [Link](http://www.w3schools.com/tags/tag_em.asp) |
+| `<u></u>` | Underlined text | Yes | [Link](http://www.w3schools.com/tags/tag_u.asp) |
+| `<s></s>` | Strikethrough text | Yes | [Link](http://www.w3schools.com/tags/tag_s.asp) |
 
 ## CSS
 
