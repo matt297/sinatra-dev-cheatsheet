@@ -28,7 +28,7 @@ A basic HTML page will have the following structure, and the file will end with 
 </html>
 ```
 
-_You can open HTML files directly in your browser without the need for Sinatra or any other kind of framework/backend - just double click the file and it'll open in your default web browser!_
+_Tip: You can open HTML files directly in your browser without the need for Sinatra or any other kind of framework/backend - just double click the file and it'll open in your default web browser!_
 
 ## CSS
 
