@@ -272,7 +272,7 @@ def say_hello
 end
 
 # Run the method (returns "Hello World!")
-say_hello
+say_hello()
 
 # Define a new method with two arguments
 def multiply(first_number, second_number)
