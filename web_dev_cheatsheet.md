@@ -35,8 +35,8 @@ _Tip: You can open HTML files directly in your browser without the need for Sina
 
 | HTML Tag | Requires Closing Tag | Purpose | More Info |
 | -------- | -------------------- | ------- | --------- |
-| <p> | Yes | Creates a paragraph of text | [Link](http://www.w3schools.com/tags/tag_p.asp) |
-| <br> | No | Creates a line break (pushes content to next line) | [Link](http://www.w3schools.com/tags/tag_br.asp) |
+| `<p>` | Yes | Creates a paragraph of text | [Link](http://www.w3schools.com/tags/tag_p.asp) |
+| `<br>` | No | Creates a line break (pushes content to next line) | [Link](http://www.w3schools.com/tags/tag_br.asp) |
 
 ## CSS
 
