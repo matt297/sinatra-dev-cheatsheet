@@ -478,7 +478,7 @@ end
 
 Sessions are a quick and easy way to store data that lasts for more than a single page-load. Remember that anything stored in a session is available for the entire duration of a users browsing session. We use ruby to interact with sessions, like so:
 
-```
+```ruby
 # Set a session value
 session[:name] = 'Matt'
 
@@ -490,6 +490,16 @@ session[:name] = nil
 
 # Clear all session data
 session.clear
+```
+
+
+### Interactive console
+
+To start up the interactive console in Sinatra, you type `bundle exec tux` in a bash window/tab. If it worked, you should see something like:
+
+```
+Loading development environment (Rack 1.3)
+>>
 ```
 
 
