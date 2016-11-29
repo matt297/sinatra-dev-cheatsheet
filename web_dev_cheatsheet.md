@@ -14,7 +14,7 @@
 
 A basic HTML page will have the following structure:
 
-```
+```html
 <!doctype html>
 <html>
   <head>
@@ -34,7 +34,7 @@ A basic HTML page will have the following structure:
 
 CSS goes in a separate file, with a `.css` extension. So, for example, you might create a file called `styles.css`. Once you've created a stylesheet, you then need to include it in your HTML page, within the `<head></head>` section. Make sure that the path to the file is correct!
 
-```
+```html
 <head>
   <link rel="stylesheet" href="path/to/styles.css">
 </head>
