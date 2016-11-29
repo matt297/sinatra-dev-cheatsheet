@@ -250,4 +250,9 @@ elsif time_of_day == 'Afternoon'
 else
   'Good evening!'
 end
+
+# Using multiple conditions
+if time_of_day == 'Morning' && weather == 'Sunny' do
+  'Happy morning!'
+end
 ```
