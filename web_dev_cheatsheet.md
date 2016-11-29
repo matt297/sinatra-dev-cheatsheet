@@ -24,6 +24,7 @@
     - [Partials](#partials)
     - [Helper methods](#helper-methods)
     - [Form data](#form-data)
+    - [Sessions](#sessions)
   1. [Git](#git)
 
 
@@ -472,6 +473,24 @@ post '/signup' do
 end
 ```
 
+
+### Sessions
+
+Sessions are a quick and easy way to store data that lasts for more than a single page-load. Remember that anything stored in a session is available for the entire duration of a users browsing session. We use ruby to interact with sessions, like so:
+
+```
+# Set a session value
+session[:name] = 'Matt'
+
+# Get the value of a session (returns "Matt")
+session[:name]
+
+# Clear a session value
+session[:name] = nil
+
+# Clear all session data
+session.clear
+```
 
 
 ## Git
