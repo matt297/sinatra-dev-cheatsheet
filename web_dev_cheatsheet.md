@@ -3,12 +3,13 @@
 ## Table of Contents
 
   1. [HTML](#html)
-    - [Basic Page Structure](#basic-page-structure)
-    - [Formatting Tags](#formatting-tags)
-    - [Content Tags](#content-tags)
-    - [Structural Tags](#structural-tags)
+    - [Basic page structure](#basic-page-structure)
+    - [Formatting tags](#formatting-tags)
+    - [Content tags](#content-tags)
+    - [Structural tags](#structural-tags)
   1. [CSS](#css)
     - [Formatting](#formatting)
+    - [Rule delcarations](#rule-declarations)
 
 
 ## HTML
@@ -33,7 +34,7 @@ A basic HTML page will have the following structure, and the file will end with 
 
 _Tip: You can open HTML files directly in your browser without the need for Sinatra or any other kind of framework/backend - just double click the file and it'll open in your default web browser! If you're using Cloud9, go to Run -> Run With -> Apache httpd._
 
-### Formatting Tags
+### Formatting tags
 
 The following tags are used to format text and paragraphs.
 
@@ -46,7 +47,7 @@ The following tags are used to format text and paragraphs.
 | `<u>` | Underlined text | Yes | [Link](http://www.w3schools.com/tags/tag_u.asp) |
 | `<s>` | Strikethrough text | Yes | [Link](http://www.w3schools.com/tags/tag_s.asp) |
 
-### Content Tags
+### Content tags
 
 These tags are used to insert interactive and fun elements into your page (so that it's more than just plain text).
 
@@ -65,7 +66,7 @@ These tags are used to insert interactive and fun elements into your page (so th
 | `<ul>` | Unordered (bulleted) list | Yes | [Link](http://www.w3schools.com/tags/tag_ul.asp) |
 | `<li>` | List item (within a `ol`/`ul`) | Yes | [Link](http://www.w3schools.com/tags/tag_li.asp) |
 
-### Structural Tags
+### Structural tags
 
 The following tags are used to provide structure and are largely used for semantics (i.e. to help a screen reader or a search engine better understand the content on our pages).
 
@@ -90,4 +91,22 @@ CSS goes in a separate file, with a `.css` extension. So, for example, you might
   <link rel="stylesheet" href="path/to/styles.css">
 </head>
 ```
+### Rule declarations
 
+A “rule declaration” is the name given to a selector (or a group of selectors) with an accompanying group of properties. It's how you tell the browser to style a particular element a particular way. Here's an example:
+
+```css
+.listing {
+  font-size: 20px;
+  color: blue;
+}
+```
+
+### Selectors
+
+Within a rule declaration, you can target an element (tell the browser which element to apply those styles to) in a few different ways.
+
+| Selector | Example | Description | More Info |
+| -------- | ------- | ----------- | --------- |
+| .class | `.intro` |	Selects all elements with `class="intro"` | [Link](http://www.w3schools.com/cssref/sel_class.asp) |
+| #id |	`#firstname` | Selects the element with `id="firstname"` | [Link](http://www.w3schools.com/cssref/sel_id.asp) |
