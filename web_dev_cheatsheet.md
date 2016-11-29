@@ -12,7 +12,7 @@
 
 ### Basic page structure
 
-A basic HTML page will have the following structure, and the file will end with the `.html` extension (i.e. `mypage.html`). You can open HTML files directly in your browser without the need for Sinatra or any other kind of framework/backend.
+A basic HTML page will have the following structure, and the file will end with the `.html` extension (i.e. `mypage.html`).
 
 ```html
 <!doctype html>
@@ -27,6 +27,8 @@ A basic HTML page will have the following structure, and the file will end with 
   </body>
 </html>
 ```
+
+_You can open HTML files directly in your browser without the need for Sinatra or any other kind of framework/backend - just double click the file and it'll open in your default web browser!_
 
 ## CSS
 
