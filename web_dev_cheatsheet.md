@@ -4,6 +4,7 @@
 
   1. [HTML](#html)
     - [Basic Page Structure](#basic-page-structure)
+    - [Common Elements](#common-elements)
   1. [CSS](#css)
     - [Formatting](#formatting)
 
@@ -29,6 +30,13 @@ A basic HTML page will have the following structure, and the file will end with 
 ```
 
 _Tip: You can open HTML files directly in your browser without the need for Sinatra or any other kind of framework/backend - just double click the file and it'll open in your default web browser! If you're using Cloud9, go to Run -> Run With -> Apache httpd._
+
+### Common elements
+
+| HTML Tag | Requires Closing Tag | Purpose | More Info |
+| -------- | -------------------- | ------- | --------- |
+| <p> | Yes | Creates a paragraph of text | [Link](http://www.w3schools.com/tags/tag_p.asp) |
+| <br> | No | Creates a line break (pushes content to next line) | [Link](http://www.w3schools.com/tags/tag_br.asp) |
 
 ## CSS
 
