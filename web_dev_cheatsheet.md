@@ -106,7 +106,7 @@ A “rule declaration” is the name given to a selector (or a group of selector
 
 Within a rule declaration, you can target an element (tell the browser which element to apply those styles to) in a few different ways.
 
-| Selector | Example | Description | More Info |
+| Selector | Example | Description | Info/Example |
 | -------- | ------- | ----------- | --------- |
 | .class | `.intro` |	Selects all elements with `class="intro"` | [Link](http://www.w3schools.com/cssref/sel_class.asp) |
 | #id |	`#firstname` | Selects the element with `id="firstname"` | [Link](http://www.w3schools.com/cssref/sel_id.asp) |
