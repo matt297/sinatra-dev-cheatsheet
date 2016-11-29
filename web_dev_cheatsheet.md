@@ -10,6 +10,7 @@
   1. [CSS](#css)
     - [Formatting](#formatting)
     - [Rule delcarations](#rule-declarations)
+    - [Selectors](#selectors)
 
 
 ## HTML
