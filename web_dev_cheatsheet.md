@@ -402,14 +402,14 @@ end
 ```html
 <!-- In your homepage.erb file -->
 
-<%= erb(:comment, locals: { comment: @comment }) %>
+<%= erb(:comment, locals: { text: @comment }) %>
 ```
 
 ```html
 <!-- In a new partial, called "comment.erb" -->
 
 New Comment:<br>
-<%= comment %>
+<%= text %>
 ```
 
 
