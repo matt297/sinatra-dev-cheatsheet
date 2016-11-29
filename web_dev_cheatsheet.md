@@ -252,7 +252,7 @@ else
 end
 
 # Using multiple conditions
-if time_of_day == 'Morning' && weather == 'Sunny' do
-  'Happy morning!'
+if time_of_day == 'Morning' && weather != 'Raining' do
+  'Happy morning! It is not raining!'
 end
 ```
