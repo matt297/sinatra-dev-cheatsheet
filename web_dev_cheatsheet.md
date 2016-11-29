@@ -534,6 +534,9 @@ ActiveRecord provides you with a variety of methods that make it easy to interac
 | `.where` | `User.where(name: 'Matt')` | Finds the object that matches the filters you provided (i.e. where the name is "Matt") | Array of objects |
 | `.first` | `User.first` | Gets the first object in the database | Single object |
 | `.last` | `User.last` | Gets the last object in the database | Single object |
+| `.new` | `User.new(name: 'Matt')` | Creates a new instance of the user class (doesn't save to the database) | Single object |
+| `.create` | `User.create(name: 'Matt')` | Creates and *SAVES* a new instance of the user class to the database (you know it's saved because it will have an ID | Single object |
+| `.save` | `User.new(name: 'Matt').save` | Saves your changes to the database | `true`/`false` |
 
 
 
