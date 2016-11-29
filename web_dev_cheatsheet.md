@@ -14,6 +14,7 @@
   1. [Ruby](#ruby)
     - [Data types](#data-types)
     - [Complex data stores](#complex-data-stores)
+    - [Logical operators](#logical-operators)
     - [Logic and conditions](#logic-and-conditions)
 
 
@@ -205,7 +206,21 @@ person['name']
 ```
 
 
-### Logi and conditions
+### Logical operators
+
+| Operator | Description | Info/Example |
+| -------- | ----------- | ------------ |
+| `==` | Equal to | [Link](https://www.tutorialspoint.com/ruby/ruby_operators.htm) |
+| `!=` | Not equal to | [Link](https://www.tutorialspoint.com/ruby/ruby_operators.htm) |
+| `>` | Greater than | [Link](https://www.tutorialspoint.com/ruby/ruby_operators.htm) |
+| `>=` | Greater than or equal to | [Link](https://www.tutorialspoint.com/ruby/ruby_operators.htm) |
+| `<` | Less than | [Link](https://www.tutorialspoint.com/ruby/ruby_operators.htm) |
+| `<=` | Less than or equal to | [Link](https://www.tutorialspoint.com/ruby/ruby_operators.htm) |
+| `&&` | And (allows you to combine multiple conditions) | [Link](https://www.tutorialspoint.com/ruby/ruby_operators.htm) | 
+| `||` | Or (allows you to combine multiple conditions | [Link](https://www.tutorialspoint.com/ruby/ruby_operators.htm) |
+
+
+### Logic and conditions
 
 Often times when programming, we need to perform logic, or create a set of conditions for a particular thing to happen. In ruby, this can be done in a variety of ways. The most common, is using an if/else block.
 
