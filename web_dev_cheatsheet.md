@@ -21,6 +21,7 @@
     - [Defining URLs](#defining-urls)
     - [Using a layout](#using-a-layout)
     - [Instance variables](#instance-variables)
+    - [Partials](#partials)
   1. [Git](#git)
 
 
@@ -361,5 +362,30 @@ end
 The current day and time is: <%= @time_of_day %>
 ```
 
+
+### Partials
+
+Sometimes in your application, you will want to re-use not only ruby code, but also HTML. The way you create re-usable HTML is by creating partials. A partial is a `.erb` file just like any other, and works exactly the same way. If someone had a weather app, perhaps they would create a single partial that contained today's forecast. Then, each time they wanted to show the forecast, they would just use the partial rather than re-typing all the code. Here's an example:
+
+```ruby
+# In the actions.rb file
+
+get '/' do 
+  erb(:homepage)
+end
+
+```
+
+```html
+<!-- In your homepage.erb file -->
+
+<%= erb(:todays_forecast) %>
+```
+
+```html
+<!-- In a new partial, called "todays_forecast.erb" -->
+
+The forecast for today is sunny with a chance of meatballs!
+```
 
 ## Git
