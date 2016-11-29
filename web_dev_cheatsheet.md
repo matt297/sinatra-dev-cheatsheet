@@ -12,7 +12,7 @@
 
 ### Basic page structure
 
-A basic HTML page will have the following structure, and the file will end in `.html`.
+A basic HTML page will have the following structure, and the file will end with the `.html` extension (i.e. `mypage.html`).
 
 ```html
 <!doctype html>
