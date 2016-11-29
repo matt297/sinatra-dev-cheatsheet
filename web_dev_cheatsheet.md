@@ -16,6 +16,7 @@
     - [Complex data stores](#complex-data-stores)
     - [Logical operators](#logical-operators)
     - [Logic and conditions](#logic-and-conditions)
+    - [Methods](#methods)
 
 
 ## HTML
@@ -255,4 +256,30 @@ end
 if time_of_day == 'Morning' && weather != 'Raining' do
   'Happy morning! It is not raining!'
 end
+```
+
+
+### Methods
+
+In programming, you often need to re-use code multiple times. Whenver this needs to be done, you put that code inside of a method, and then you can simply run the method whenver you need that code. Methods can either accept arguments (i.e. take in values and then do something with those values), or accept no arguments (i.e. if you just want to print out something). To define a method, you use the `def` and `end` keywords.
+
+Remember, in Ruby, the last line of a method is automatically returned as the final value.
+
+```ruby
+# Define a new method with no arguments
+def say_hello
+  'Hello world!'
+end
+
+# Run the method (returns "Hello World!")
+say_hello
+
+# Define a new method with two arguments
+def multiply(first_number, second_number)
+  first_number * second_number
+end
+
+# Run the method (returns "25")
+multiply(5,5)
+
 ```
