@@ -11,6 +11,9 @@
     - [Formatting](#formatting)
     - [Rule delcarations](#rule-declarations)
     - [Selectors](#selectors)
+  1. [Ruby](#ruby)
+    - [Data types](#data-types)
+    - [Complex data stores](#complex-data-stores)
 
 
 ## HTML
@@ -147,4 +150,51 @@ To apply different styles for different screen sizes (i.e. mobile device vs. a d
     color: blue;
   }
 }
+```
+
+
+## Ruby
+
+
+### Data types
+
+In ruby, we can store different types of data. These are the most common types (with a couple examples for each).
+
+```ruby
+# A string, wrapped in quotes (single or double)
+first_name = 'John'
+last_name = "Doe"
+
+# An integer (has no decimal places)
+first_number = 1
+second_number = 10
+
+# A float (has decimal places)
+first_number = 5.5
+second_number = 8.2
+```
+
+## Complex data stores
+
+When needed, you can also store data in more complicated ways. For instance, maybe you need to create a list of things, well, Ruby makes that easy! You can use an array to store any number of things (and each thing can be of a different type - i.e. a straing, then an integer, then a float).
+
+```ruby
+# Create an array (list of things of any types)
+grocery_list = ['Potatoes', 'Bread', 'Milk', 'Butter']
+
+# To get the first item from the list (returns "Potatoes")
+grocery_list[0]
+
+# To get the second item from the list (returns "Bread")
+grocery_list[1]
+```
+
+For groups of related data, you can also use a hash as a different way to store the data.
+
+```ruby
+# Create hash
+person = { name: 'Matt, age: 99, favourite_book: 'Harry Potter', favourite_movie: 'Inception' }
+
+# Get the person's name (returns "Matt")
+person['name']
 ```
