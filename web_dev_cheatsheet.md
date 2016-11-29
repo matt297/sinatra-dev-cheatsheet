@@ -19,6 +19,7 @@
     - [Methods](#methods)
   1. [Sinatra](#sinatra)
     - [Defining URLs](#defining-urls)
+    - [Using a layout](#using-a-layout)
     - [Instance variables](#instance-variables)
   1. [Git](#git)
 
@@ -314,6 +315,29 @@ Using the code above, your site visitor would just see a blank page, because you
 get '/' do
   erb(:homepage) # Sinatra will now render the 'homepage.erb' file when a user visits 'yoursite.com/'
 end
+```
+
+
+### Using a layout
+
+Often times, websites will have a consistent header and footer that are shown on every page. In Sinatra, the way you accomplish this is by creating a `layout.erb` file. The contents of this file will be displayed on every single page of your app, so that each page has a consistent look and feel. In your `layout.erb` file, you also need to specify where the contents of each page go, and you do that using the `<%= yield %>` tag. Here is a sample layout file...
+
+```html
+<!doctype html>
+<html>
+  <head>
+    <title>Super App</title>
+  </head>
+  <body>
+    
+    <img src="logo.jpg">
+    <h1>Super App</h1>
+    
+    <! -- This is where the page contents gets inserted -->
+    <%= yield %>
+  
+  </body>
+</html>
 ```
 
 
