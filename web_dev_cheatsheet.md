@@ -22,6 +22,7 @@
     - [Using a layout](#using-a-layout)
     - [Instance variables](#instance-variables)
     - [Partials](#partials)
+    - [Helper methods](#helper-methods)
   1. [Git](#git)
 
 
@@ -412,5 +413,33 @@ end
 <%= name %> says: <%= text %>
 ```
 
+
+### Helper methods
+
+When you create a method, typically it's only meant for use within your ruby files. But, Sinatra has a nifty way for you to create methods that you can also use within your view files (ERB). They are called helper methods, and here's how you use them:
+
+```ruby
+# In actions.rb
+
+helpers do
+  def time_of_day
+    if Time.now.hour < 12
+      'Morning'
+    else
+      'Afternoon'
+    end
+  end
+end
+
+get '/' do
+  erb(:homepage)
+end
+```
+
+```html
+<!-- In your homepage.erb file -->
+
+Hello there! Welcome and good <%= time_of_day %> to you!
+```
 
 ## Git
