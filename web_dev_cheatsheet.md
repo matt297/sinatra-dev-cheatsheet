@@ -4,7 +4,7 @@
 
   1. [HTML](#html)
     - [Basic Page Structure](#basic-page-structure)
-    - [Common Elements](#common-elements)
+    - [Formatting Tags](#formatting-tags)
   1. [CSS](#css)
     - [Formatting](#formatting)
 
@@ -31,16 +31,16 @@ A basic HTML page will have the following structure, and the file will end with 
 
 _Tip: You can open HTML files directly in your browser without the need for Sinatra or any other kind of framework/backend - just double click the file and it'll open in your default web browser! If you're using Cloud9, go to Run -> Run With -> Apache httpd._
 
-### Common elements
+### Formatting Tags
 
-| HTML Tag | Requires Closing Tag | Purpose | More Info |
-| -------- | -------------------- | ------- | --------- |
-| `<p>` | Yes | Paragraph of text | [Link](http://www.w3schools.com/tags/tag_p.asp) |
-| `<br>` | No | Line break/pushes content to next line | [Link](http://www.w3schools.com/tags/tag_br.asp) |
-| `<strong>` | Yes | Bold text | [Link](http://www.w3schools.com/tags/tag_strong.asp) |
-| `<em>` | Yes | Italic/emphasized text | [Link](http://www.w3schools.com/tags/tag_em.asp) |
-| `<u>` | Yes | Underlined text | [Link](http://www.w3schools.com/tags/tag_u.asp) |
-| `<s>` | Yes | Strikethrough text | [Link](http://www.w3schools.com/tags/tag_s.asp) |
+| HTML Tag | Purpose | Requires Closing Tag | More Info |
+| -------- | ------- | -------------------- | --------- |
+| `<p>` | Paragraph of text | Yes | [Link](http://www.w3schools.com/tags/tag_p.asp) |
+| `<br>` | Line break/pushes content to next line | No | [Link](http://www.w3schools.com/tags/tag_br.asp) |
+| `<strong>` | Bold text | Yes | [Link](http://www.w3schools.com/tags/tag_strong.asp) |
+| `<em>` | Italic/emphasized text | Yes | [Link](http://www.w3schools.com/tags/tag_em.asp) |
+| `<u>` | Underlined text | Yes | [Link](http://www.w3schools.com/tags/tag_u.asp) |
+| `<s>` | Strikethrough text | Yes | [Link](http://www.w3schools.com/tags/tag_s.asp) |
 
 ## CSS
 
