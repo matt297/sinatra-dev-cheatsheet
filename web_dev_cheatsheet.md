@@ -15,6 +15,7 @@
 
 ## HTML
 
+
 ### Basic page structure
 
 A basic HTML page will have the following structure, and the file will end with the `.html` extension (i.e. `mypage.html`).
@@ -35,6 +36,7 @@ A basic HTML page will have the following structure, and the file will end with 
 
 _Tip: You can open HTML files directly in your browser without the need for Sinatra or any other kind of framework/backend - just double click the file and it'll open in your default web browser! If you're using Cloud9, go to Run -> Run With -> Apache httpd._
 
+
 ### Formatting tags
 
 The following tags are used to format text and paragraphs.
@@ -47,6 +49,7 @@ The following tags are used to format text and paragraphs.
 | `<em>` | Italic/emphasized text | Yes | [Link](http://www.w3schools.com/tags/tag_em.asp) |
 | `<u>` | Underlined text | Yes | [Link](http://www.w3schools.com/tags/tag_u.asp) |
 | `<s>` | Strikethrough text | Yes | [Link](http://www.w3schools.com/tags/tag_s.asp) |
+
 
 ### Content tags
 
@@ -67,6 +70,7 @@ These tags are used to insert interactive and fun elements into your page (so th
 | `<ul>` | Unordered (bulleted) list | Yes | [Link](http://www.w3schools.com/tags/tag_ul.asp) |
 | `<li>` | List item (within a `ol`/`ul`) | Yes | [Link](http://www.w3schools.com/tags/tag_li.asp) |
 
+
 ### Structural tags
 
 The following tags are used to provide structure and are largely used for semantics (i.e. to help a screen reader or a search engine better understand the content on our pages).
@@ -81,7 +85,9 @@ The following tags are used to provide structure and are largely used for semant
 | `<footer>` | Footer content | Yes | [Link](http://www.w3schools.com/tags/tag_footer.asp) |
 | `<div>` | Any block of content | Yes | [Link](http://www.w3schools.com/tags/tag_div.asp) |
 
+
 ## CSS
+
 
 ### Adding a stylesheet
 
@@ -92,6 +98,7 @@ CSS goes in a separate file, with a `.css` extension. So, for example, you might
   <link rel="stylesheet" href="path/to/styles.css">
 </head>
 ```
+
 ### Rule declarations
 
 A “rule declaration” is the name given to a selector (or a group of selectors) with an accompanying group of properties. It's how you tell the browser to style a particular element a particular way. Here's an example:
@@ -103,12 +110,41 @@ A “rule declaration” is the name given to a selector (or a group of selector
 }
 ```
 
+
 ### Selectors
 
-Within a rule declaration, you can target an element (tell the browser which element to apply those styles to) in a few different ways.
+Within a rule declaration, you can target an element (tell the browser what to apply those styles to) in a few different ways.
 
 | Selector | Example | Description | Info/Example |
 | -------- | ------- | ----------- | --------- |
 | .class | `.intro` |	Selects all elements with `class="intro"` | [Link](http://www.w3schools.com/cssref/sel_class.asp) |
 | #id |	`#firstname` | Selects the element with `id="firstname"` | [Link](http://www.w3schools.com/cssref/sel_id.asp) |
 | element | `p` | Selects all `<p>` elements | [Link](http://www.w3schools.com/cssref/sel_element.asp) |
+
+
+### Media queries
+
+To apply different styles for different screen sizes (i.e. mobile device vs. a desktop computer), you can use media queries. The most common ways to use media queries is to specify a `min-width`, a `max-width`, or both together.
+
+```css
+// These styles will be applied to desktop browsers
+@media (min-width: 992px) {
+  .my-element {
+    color: red;
+  }
+}
+
+// These styles will be applied to tablets
+@media (min-width: 768px) and (max-width: 991px) {
+  .my-element {
+    color: green;
+  }
+}
+
+// These styles will be applied to mobile devices
+@media (max-width: 767px) {
+  .my-element {
+    color: blue;
+  }
+}
+```
