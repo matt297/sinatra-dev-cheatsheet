@@ -127,22 +127,22 @@ Within a rule declaration, you can target an element (tell the browser what to a
 To apply different styles for different screen sizes (i.e. mobile device vs. a desktop computer), you can use media queries. The most common ways to use media queries is to specify a `min-width`, a `max-width`, or both together.
 
 ```css
-/* These styles will be applied to desktop browsers */
 @media (min-width: 992px) {
+  /* These styles will be applied to desktop browsers */
   .my-element {
     color: red;
   }
 }
 
-/* These styles will be applied to tablets */
 @media (min-width: 768px) and (max-width: 991px) {
+  /* These styles will be applied to tablets */
   .my-element {
     color: green;
   }
 }
 
-/* These styles will be applied to mobile devices */
 @media (max-width: 767px) {
+  /* These styles will be applied to mobile devices */
   .my-element {
     color: blue;
   }
