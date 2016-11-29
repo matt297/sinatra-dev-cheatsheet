@@ -608,5 +608,7 @@ post '/signup' do
 end
 ```
 
+_For a full list of all possible built-in validations, refer to [this guide](http://guides.rubyonrails.org/active_record_validations.html)._
+
 
 ## Git
