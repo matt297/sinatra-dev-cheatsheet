@@ -14,6 +14,7 @@
   1. [Ruby](#ruby)
     - [Data types](#data-types)
     - [Complex data stores](#complex-data-stores)
+    - [Logical operators](#logical-operators)
 
 
 ## HTML
@@ -201,4 +202,17 @@ person = { name: 'Matt, age: 99, favourite_book: 'Harry Potter', favourite_movie
 
 # Get the person's name (returns "Matt")
 person['name']
+```
+
+
+### Logical operators
+
+Often times when programming, we need to perform logic, or create a set of conditions for a particular thing to happen. In ruby, this can be done in a variety of ways. The most common, is using an if/else block.
+
+```ruby
+if condition1
+  # Do something
+else
+  # Do something else
+end
 ```
