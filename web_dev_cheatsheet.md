@@ -57,7 +57,11 @@ These tags are used to insert interactive and fun elements into your page (so th
 | `<form action="/process" method="POST">` | A form | Yes | [Link](http://www.w3schools.com/tags/tag_form.asp) |
 | `<input type="text">` | An input field | No | [Link](http://www.w3schools.com/tags/tag_input.asp) |
 | `<input type="password">` | A password field | No | [Link](http://www.w3schools.com/tags/tag_input.asp) |
-| `<button>Click Me</button>` | A button | No | [Link](http://www.w3schools.com/tags/tag_button.asp) |
+| `<input type="email">` | An email field | No | [Link](http://www.w3schools.com/tags/tag_input.asp) |
+| `<button>` | A button | No | [Link](http://www.w3schools.com/tags/tag_button.asp) |
+| `<ol>` | Ordered (numbered) list | Yes | [Link](http://www.w3schools.com/tags/tag_ol.asp) |
+| `<ul>` | Unordered (bulleted) list | Yes | [Link](http://www.w3schools.com/tags/tag_ul.asp) |
+| `<li>` | List item (within a `ol`/`ul`) | Yes | [Link](http://www.w3schools.com/tags/tag_li.asp) |
 
 ### Structural Tags
 
