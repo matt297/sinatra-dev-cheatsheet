@@ -172,6 +172,10 @@ second_number = 10
 # A float (has decimal places)
 first_number = 5.5
 second_number = 8.2
+
+# A boolean (true/false value)
+first_value = true
+second_value = false
 ```
 
 ## Complex data stores
