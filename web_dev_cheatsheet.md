@@ -178,7 +178,7 @@ To apply different styles for different screen sizes (i.e. mobile device vs. a d
 ## Ruby
 
 
-# Ruby basics
+### Ruby basics
 
 For a more comprehensive guide to the very very basics of ruby, refer to [this guide](https://gist.github.com/matt297/055ee0b28c2bd79aa9783359d83f4906).
 
