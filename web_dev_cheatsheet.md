@@ -589,7 +589,7 @@ end
 
 To check if a particular instance of the `User` class passes validation, you could try creating a new one, then using the `.valid?` method (which returns `true`/`false`). Here is what you might do after someone submits a signup form:
 
-```
+```ruby
 # In actions.rb
 
 post '/signup' do
