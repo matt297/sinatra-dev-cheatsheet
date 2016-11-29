@@ -110,3 +110,4 @@ Within a rule declaration, you can target an element (tell the browser which ele
 | -------- | ------- | ----------- | --------- |
 | .class | `.intro` |	Selects all elements with `class="intro"` | [Link](http://www.w3schools.com/cssref/sel_class.asp) |
 | #id |	`#firstname` | Selects the element with `id="firstname"` | [Link](http://www.w3schools.com/cssref/sel_id.asp) |
+| element | `p` | Selects all `<p>` elements | [Link](http://www.w3schools.com/cssref/sel_element.asp) |
