@@ -541,7 +541,7 @@ ActiveRecord provides you with a variety of methods that make it easy to interac
 
 In an application with multiple classes/models, you will usually have relationships between them. Consider the example of a `Post` belonging to a `User`. Here is how you would specify those relationships in your classes/models:
 
-```
+```ruby
 class User < ActiveRecord::Base
   has_many :posts
 end
@@ -549,6 +549,21 @@ end
 class Post < ActiveRecord::Base
   belongs_to :user
 end
+```
+
+Once you have the association setup, you can then easily get a lists of all the posts that a user has created by doing something like this...
+```ruby
+# Find a user
+user = User.find(5)
+
+# Get a list of all the posts by that user
+user.posts
+
+# We can also do it the opposite way... start by finding a post
+post = Post.find(12)
+
+# What user made this post?
+post.user
 ```
 
 
