@@ -96,7 +96,7 @@ CSS goes in a separate file, with a `.css` extension. So, for example, you might
 A “rule declaration” is the name given to a selector (or a group of selectors) with an accompanying group of properties. It's how you tell the browser to style a particular element a particular way. Here's an example:
 
 ```css
-.listing {
+.my-element {
   font-size: 20px;
   color: blue;
 }
