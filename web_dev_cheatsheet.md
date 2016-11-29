@@ -25,6 +25,7 @@
     - [Helper methods](#helper-methods)
     - [Form data](#form-data)
     - [Sessions](#sessions)
+    - [Interactive console](#interactive-console)
   1. [Git](#git)
 
 
