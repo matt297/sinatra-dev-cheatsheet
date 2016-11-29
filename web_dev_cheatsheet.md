@@ -395,6 +395,7 @@ You can get even more complicated with partials and also pass variables into the
 
 get '/' do
   @comment = "Great post! Really fun to read!"
+  @commenter = "Joe"
   erb(:homepage)
 end
 ```
@@ -402,14 +403,13 @@ end
 ```html
 <!-- In your homepage.erb file -->
 
-<%= erb(:comment, locals: { text: @comment }) %>
+<%= erb(:comment, locals: { text: @comment, name: @commenter }) %>
 ```
 
 ```html
 <!-- In a new partial, called "comment.erb" -->
 
-New Comment:<br>
-<%= text %>
+<%= name %> says: <%= text %>
 ```
 
 
