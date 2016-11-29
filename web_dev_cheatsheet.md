@@ -25,7 +25,7 @@
     - [Helper methods](#helper-methods)
     - [Form data](#form-data)
     - [Sessions](#sessions)
-    - [Interactive console](#interactive-console)
+    - [Interactive console (tux)](#interactive-console-tux)
   1. [Git](#git)
 
 
@@ -494,7 +494,7 @@ session.clear
 ```
 
 
-### Interactive console
+### Interactive console (tux)
 
 To start up the interactive console in Sinatra, you type `bundle exec tux` in a bash window/tab. If it worked, you should see something like:
 
