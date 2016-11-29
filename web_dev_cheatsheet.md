@@ -208,6 +208,8 @@ person['name']
 
 ### Logical operators
 
+When performing logic, ruby always returns one of two things: `true` or `false`. That makes it easy for us to build programs around this behaviour. To do logic, you use operators, which are listed in the table below.
+
 | Operator | Description | Info/Example |
 | -------- | ----------- | ------------ |
 | `==` | Equal to | [Link](https://www.tutorialspoint.com/ruby/ruby_operators.htm) |
@@ -218,6 +220,14 @@ person['name']
 | `<=` | Less than or equal to | [Link](https://www.tutorialspoint.com/ruby/ruby_operators.htm) |
 | `&&` | And (allows you to combine multiple conditions) | [Link](https://www.tutorialspoint.com/ruby/ruby_operators.htm) | 
 | `||` | Or (allows you to combine multiple conditions | [Link](https://www.tutorialspoint.com/ruby/ruby_operators.htm) |
+
+```ruby
+# Comparing two things
+variable_one == variable_two
+
+# Using multiple conditions
+variable_one == variable_two && variable_three != variable_four
+```
 
 
 ### Logic and conditions
