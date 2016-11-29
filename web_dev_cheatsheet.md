@@ -464,12 +464,13 @@ Inside an ERB file, a form would look like this:
 </form>
 ```
 
-Then, in your `actions.rb` file, you would create a new URL that accepts incoming `POST` requests, like so:
+Then, in your `actions.rb` file, you would create a new URL that accepts incoming `POST` requests. Remember, you can access values submitted from a form using `params`, like this:
 
 ```ruby
 post '/signup' do
-  # Process the form
+  @name = params[:name]
 end
+```
 
 
 
