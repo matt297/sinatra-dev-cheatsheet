@@ -450,7 +450,7 @@ When you want to get user input, you use a form. Sinatra has some fun and helpfu
 
 | Method | Description | When to use |
 | ------ | ----------- | ----------- |
-| GET | Values appear in the URL | Performing searches or filtering |
+| GET | Values appear in the URL | Performing searches or filtering (when you're not "changing" data in your application) |
 | POST | Values are sent silently/hidden | Submitting sensitive data, or when the form will change/save something in your application |
 
 Inside an ERB file, a form would look like this:
