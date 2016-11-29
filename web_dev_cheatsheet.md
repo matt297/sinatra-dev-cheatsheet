@@ -210,9 +210,11 @@ person['name']
 Often times when programming, we need to perform logic, or create a set of conditions for a particular thing to happen. In ruby, this can be done in a variety of ways. The most common, is using an if/else block.
 
 ```ruby
-if condition1
-  # Do something
+if time_of_day == 'Morning'
+  'Good morning!'
+elsif time_of_day == 'Afternoon'
+  'Good afternoon!'
 else
-  # Do something else
+  'Good evening!'
 end
 ```
