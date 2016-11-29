@@ -26,6 +26,10 @@
     - [Form data](#form-data)
     - [Sessions](#sessions)
     - [Interactive console (tux)](#interactive-console-tux)
+  1. [ActiveRecord](#activerecord)
+    - [Defining a new class/object](#defining-a-new-class-object]
+    - [Built-in methods](#built-in-methods)
+    - [Defining relationships](#defining-relationships)
   1. [Git](#git)
 
 
@@ -501,6 +505,50 @@ To start up the interactive console in Sinatra, you type `bundle exec tux` in a 
 ```
 Loading development environment (Rack 1.3)
 >>
+```
+
+
+## ActiveRecord
+
+
+### Defining a new class/object
+
+To define a new class/type of object that has a corresponding database table, we create a new `.rb` file in the `app/models/` folder. To make sure the new class has all the ActiveRecord functionality built-in, we let it inherit from `ActiveRecord::Base`, like so:
+
+```ruby
+class Post < ActiveRecord::Base
+
+end
+```
+
+*_Note:_* In the real world, you also need to create the relevant table in the database for this to hook up to. For our course, this was already done when we got started. The scope of how to do this is beyond what's covered in this cheat sheet, but if you're interested in learning more, [this tutorial](https://learn.co/lessons/sinatra-activerecord-setup) offers some insight.
+
+
+### Built-in methods
+
+ActiveRecord provides you with a variety of methods that make it easy to interact with your data in the database.
+
+| Method | Example | Description | Return type |
+| ------ | ------- | ----------- | --------- |
+| `.find` | `User.find(5)` | Finds the object with the specified ID | Single object |
+| `.where` | `User.where(name: 'Matt')` | Finds the object that matches the filters you provided (i.e. where the name is "Matt") | Array of objects |
+| `.first` | `User.first` | Gets the first object in the database | Single object |
+| `.last` | `User.last` | Gets the last object in the database | Single object |
+
+
+
+### Defining relationships
+
+In an application with multiple classes/models, you will usually have relationships between them. Consider the example of a `Post` belonging to a `User`. Here is how you would specify those relationships in your classes/models:
+
+```
+class User < ActiveRecord::Base
+  has_many :posts
+end
+
+class Post < ActiveRecord::Base
+  belongs_to :user
+end
 ```
 
 
