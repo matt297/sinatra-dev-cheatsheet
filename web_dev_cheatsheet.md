@@ -27,7 +27,7 @@
     - [Sessions](#sessions)
     - [Interactive console (tux)](#interactive-console-tux)
   1. [ActiveRecord](#activerecord)
-    - [Defining a new class/object](#defining-a-new-class-object]
+    - [Defining a new class or object](#defining-a-new-class-object]
     - [Built-in methods](#built-in-methods)
     - [Defining relationships](#defining-relationships)
   1. [Git](#git)
