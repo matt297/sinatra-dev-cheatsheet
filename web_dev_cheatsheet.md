@@ -54,7 +54,7 @@ These tags are used to insert interactive and fun elements into your page (so th
 | -------- | ------- | -------------------- | --------- |
 | `<a href="http://google.com">Link text</a>` | Link to another page | Yes | [Link](http://www.w3schools.com/tags/tag_a.asp) |
 | `<img src="http://google.com/image.jpg">` | Displays an image | No | [Link](http://www.w3schools.com/tags/tag_img.asp) |
-| `<form action="/process" method="POST">` | Marks the start of a form | Yes | [Link](http://www.w3schools.com/tags/tag_form.asp) |
+| `<form action="/process" method="POST">` | A form | Yes | [Link](http://www.w3schools.com/tags/tag_form.asp) |
 | `<input>` | An input field | No | [Link](http://www.w3schools.com/tags/tag_input.asp) |
 | `<button>` | A button | No | [Link](http://www.w3schools.com/tags/tag_button.asp) |
 
