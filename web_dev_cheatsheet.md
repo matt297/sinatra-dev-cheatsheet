@@ -5,6 +5,8 @@
   1. [HTML](#html)
     - [Basic Page Structure](#basic-page-structure)
     - [Formatting Tags](#formatting-tags)
+    - [Content Tags](#content-tags)
+    - [Structural Tags](#structural-tags)
   1. [CSS](#css)
     - [Formatting](#formatting)
 
@@ -33,6 +35,8 @@ _Tip: You can open HTML files directly in your browser without the need for Sina
 
 ### Formatting Tags
 
+The following tags are used to format text and paragraphs.
+
 | HTML Tag | Purpose | Requires Closing Tag | Info/Example |
 | -------- | ------- | -------------------- | --------- |
 | `<p>` | Paragraph of text | Yes | [Link](http://www.w3schools.com/tags/tag_p.asp) |
@@ -41,6 +45,29 @@ _Tip: You can open HTML files directly in your browser without the need for Sina
 | `<em>` | Italic/emphasized text | Yes | [Link](http://www.w3schools.com/tags/tag_em.asp) |
 | `<u>` | Underlined text | Yes | [Link](http://www.w3schools.com/tags/tag_u.asp) |
 | `<s>` | Strikethrough text | Yes | [Link](http://www.w3schools.com/tags/tag_s.asp) |
+
+### Content Tags
+
+These tags are used to insert interactive and fun elements into your page (so that it's more than just plain text).
+
+| HTML Tag | Purpose | Requires Closing Tag | Info/Example |
+| -------- | ------- | -------------------- | --------- |
+| `<a href="http://google.com">Link text</a>` | Link to another page | Yes | [Link](http://www.w3schools.com/tags/tag_a.asp) |
+| `<img src="http://google.com/image.jpg">` | Displays an image | No | [Link](http://www.w3schools.com/tags/tag_img.asp) |
+
+### Structural Tags
+
+The following tags are used to provide structure and are largely used for semantics (i.e. to help a screen reader or a search engine better understand the content on our pages).
+
+| HTML Tag | Purpose | Requires Closing Tag | Info/Example |
+| -------- | ------- | -------------------- | --------- |
+| `<header>` | Header content | Yes | [Link](http://www.w3schools.com/tags/tag_header.asp) |
+| `<nav>` | Navigation/menu content | Yes | [Link](http://www.w3schools.com/tags/tag_nav.asp) |
+| `<main>` | Main content of the document | Yes | [Link](http://www.w3schools.com/tags/tag_main.asp) |
+| `<article>` | An article | Yes | [Link](http://www.w3schools.com/tags/tag_article.asp) |
+| `<section>` | A section of content | Yes | [Link](http://www.w3schools.com/tags/tag_section.asp) |
+| `<footer>` | Footer content | Yes | [Link](http://www.w3schools.com/tags/tag_footer.asp) |
+| `<div>` | Any block of content | Yes | [Link](http://www.w3schools.com/tags/tag_div.asp) |
 
 ## CSS
 
