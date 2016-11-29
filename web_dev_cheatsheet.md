@@ -17,6 +17,9 @@
     - [Logical operators](#logical-operators)
     - [Logic and conditions](#logic-and-conditions)
     - [Methods](#methods)
+  1. [Sinatra](#sinatra)
+    - [Defining URLs](#defining-urls)
+  1. [Git](#git)
 
 
 ## HTML
@@ -283,3 +286,35 @@ end
 multiply(5,5)
 
 ```
+
+
+## Sinatra
+
+In Sinatra, there are two primary types of files: ruby files (ending in `.rb`, only containing Ruby code), and embedded ruby files (ending in `.erb` and combining both HTML + Ruby code). ERB files are usually found in the `app/views/` folder, while Ruby files can be found in `app/` or `app/models/`. 
+
+
+### Defining URLs
+
+To define a new URL in Sinatra, you edit your `app/actions.rb` file. You can add as many URLs as you like, and each one will be visitable in the browser by a site visitor.
+
+```ruby
+get '/' do
+  # This code gets run when a user visits "yoursite.com/"
+end
+
+get '/signup' do
+  # This code gets run when a user visits "yoursite.com/signup"
+end
+```
+
+Using the code above, your site visitor would just see a blank page, because you haven't defined any code to run. If you wanted to render the contents of a particular ERB file, you would have to explicitly tell Sinatra to do so. Here's how:
+
+```ruby
+get '/' do
+  erb(:homepage) # Sinatra will now render the 'homepage.erb' file when a user visits 'yoursite.com/'
+end
+```
+
+
+
+## Git
