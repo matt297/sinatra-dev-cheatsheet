@@ -19,6 +19,7 @@
     - [Methods](#methods)
   1. [Sinatra](#sinatra)
     - [Defining URLs](#defining-urls)
+    - [Instance variables](#instance-variables)
   1. [Git](#git)
 
 
@@ -307,7 +308,7 @@ get '/signup' do
 end
 ```
 
-Using the code above, your site visitor would just see a blank page, because you haven't defined any code to run. If you wanted to render the contents of a particular ERB file, you would have to explicitly tell Sinatra to do so. Here's how:
+Using the code above, your site visitor would just see a blank page, because you haven't defined any code to run. If you wanted to render the contents of a particular view file (ERB), you would have to explicitly tell Sinatra to do so. Here's how:
 
 ```ruby
 get '/' do
@@ -315,6 +316,25 @@ get '/' do
 end
 ```
 
+
+### Instance variables
+
+Sometimes you need to pass a variable/value to your view file, so that it can display something dynamically. For instance, maybe you want to display a homepage that says "Good morning" or "Good evening" based on the time of day. You would need to pass the time of day into your view file. To do so, you would use an instance variable (one that starts with an `@` sign).
+
+```
+# Inside your actions.rb file
+
+get '/' do
+  @time_of_day = Time.now
+  erb(:homepage)
+end
+```
+
+```erb
+<!-- Inside your homepage.erb file -->
+
+The current day and time is: <%= @time_of_day %>
+```
 
 
 ## Git
