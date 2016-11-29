@@ -388,4 +388,29 @@ end
 The forecast for today is sunny with a chance of meatballs!
 ```
 
+You can get even more complicated with partials and also pass variables into them. For instance, consider the case of a blog website, where comments should always appear in the same format, but the actual text of the comment might change. Here is how you might approach that:
+
+```ruby
+# In actions.rb
+
+get '/' do
+  @comment = "Great post! Really fun to read!"
+  erb(:homepage)
+end
+```
+
+```html
+<!-- In your homepage.erb file -->
+
+<%= erb(:comment, locals: { comment: @comment }) %>
+```
+
+```html
+<!-- In a new partial, called "comment.erb" -->
+
+New Comment:<br>
+<%= comment %>
+```
+
+
 ## Git
