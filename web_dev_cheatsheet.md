@@ -58,6 +58,7 @@ The following tags are used to format text and paragraphs.
 | `<br>` | Line break/pushes content to next line | No | [Link](http://www.w3schools.com/tags/tag_br.asp) |
 | `<strong>` | Bold text | Yes | [Link](http://www.w3schools.com/tags/tag_strong.asp) |
 | `<em>` | Italic/emphasized text | Yes | [Link](http://www.w3schools.com/tags/tag_em.asp) |
+| `<h1> <h2> <h3> <h4>` | Headings | Yes | [Link](http://www.w3schools.com/tags/tag_hn.asp) |
 | `<u>` | Underlined text | Yes | [Link](http://www.w3schools.com/tags/tag_u.asp) |
 | `<s>` | Strikethrough text | Yes | [Link](http://www.w3schools.com/tags/tag_s.asp) |
 
@@ -333,7 +334,7 @@ Often times, websites will have a consistent header and footer that are shown on
     <img src="logo.jpg">
     <h1>Super App</h1>
     
-    <! -- This is where the page contents gets inserted -->
+    <!-- This is where the page contents gets inserted -->
     <%= yield %>
   
   </body>
