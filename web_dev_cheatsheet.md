@@ -31,6 +31,7 @@
     - [Built-in methods](#built-in-methods)
     - [Defining relationships](#defining-relationships)
     - [Model validations](#model-validations)
+    - [Updating values](#updating-values)
   1. [Git](#git)
 
 
@@ -609,6 +610,18 @@ end
 ```
 
 _For a full list of all possible built-in validations, refer to [this guide](http://guides.rubyonrails.org/active_record_validations.html)._
+
+
+### Updating values
+
+The web isn't static, which necessitates having the ability to edit data after you've saved it to the database! With ActiveRecord, this is super easy! Let's say you wanted to update the name and address for a user in your database. You would start by locating their user ID, open up `bundle exec tux`, and then do the following:
+
+```
+user = User.find(5)
+user.name = 'New Name'
+user.address = 'New Address'
+user.save
+```
 
 
 ## Git
