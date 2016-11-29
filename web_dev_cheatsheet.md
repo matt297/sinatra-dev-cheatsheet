@@ -321,7 +321,7 @@ end
 
 Sometimes you need to pass a variable/value to your view file, so that it can display something dynamically. For instance, maybe you want to display a homepage that says "Good morning" or "Good evening" based on the time of day. You would need to pass the time of day into your view file. To do so, you would use an instance variable (one that starts with an `@` sign).
 
-```
+```ruby
 # Inside your actions.rb file
 
 get '/' do
@@ -330,7 +330,7 @@ get '/' do
 end
 ```
 
-```erb
+```ruby
 <!-- Inside your homepage.erb file -->
 
 The current day and time is: <%= @time_of_day %>
