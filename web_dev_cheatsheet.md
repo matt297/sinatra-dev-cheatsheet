@@ -30,6 +30,7 @@
     - [Defining a new class/object](#defining-a-new-class-object)
     - [Built-in methods](#built-in-methods)
     - [Defining relationships](#defining-relationships)
+    - [Model validations](#model-validations)
   1. [Git](#git)
 
 
@@ -535,7 +536,7 @@ ActiveRecord provides you with a variety of methods that make it easy to interac
 | `.first` | `User.first` | Gets the first object in the database | Single object |
 | `.last` | `User.last` | Gets the last object in the database | Single object |
 | `.new` | `User.new(name: 'Matt')` | Creates a new instance of the user class (doesn't save to the database) | Single object |
-| `.create` | `User.create(name: 'Matt')` | Creates and *SAVES* a new instance of the user class to the database (you know it's saved because it will have an ID | Single object |
+| `.create` | `User.create(name: 'Matt')` | Creates and *SAVES* a new instance of the user class to the database (you know it's saved because it will have an ID) | Single object |
 | `.save` | `User.new(name: 'Matt').save` | Saves your changes to the database | `true`/`false` |
 
 
@@ -567,6 +568,44 @@ post = Post.find(12)
 
 # What user made this post?
 post.user
+```
+
+
+### Model validations
+
+ActiveRecord provides us with convenient ways to add validations to our classes/models. When a validation is in place, a new record in the database cannot be created/edited/saved unless it passes all of our validations! To define a validation, you specify it on the model/class:
+
+```ruby
+class User < ActiveRecord::Base
+
+  # Every user must have a name and email
+  validates_presence_of :name, :email
+  
+  # The same email can't belong to multiple users
+  validates_uniqueness_of :email
+
+end
+```
+
+To check if a particular instance of the `User` class passes validation, you could try creating a new one, then using the `.valid?` method (which returns `true`/`false`). Here is what you might do after someone submits a signup form:
+
+```
+# In actions.rb
+
+post '/signup' do
+
+  name = params[:name]
+  email = params[:email]
+  
+  @user = User.new(name: name, email: email)
+  
+  if @user.save # Calling .save automatically runs validations!
+     erb(:signup_success)
+   else
+     erb(:signup_failed)
+   end
+
+end
 ```
 
 
