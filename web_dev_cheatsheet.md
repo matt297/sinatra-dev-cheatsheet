@@ -207,7 +207,7 @@ second_value = false
 
 ## Complex data stores
 
-When needed, you can also store data in more complicated ways. For instance, maybe you need to create a list of things, well, Ruby makes that easy! You can use an array to store any number of things (and each thing can be of a different type - i.e. a straing, then an integer, then a float).
+When needed, you can also store data in more complicated ways. For instance, maybe you need to create a list of things, well, Ruby makes that easy! You can use an array to store any number of things (and each thing can be of a different type - i.e. a string, then an integer, then a float).
 
 ```ruby
 # Create an array (list of things of any types)
