@@ -4,23 +4,24 @@ This is a cheat sheet I developed for students while teaching an [Intro to Web D
 
 ## Table of Contents
 
-  1. [HTML](#html)
+1. [HTML](#html)
     - [Basic page structure](#basic-page-structure)
     - [Formatting tags](#formatting-tags)
     - [Content tags](#content-tags)
     - [Structural tags](#structural-tags)
-  2. [CSS](#css)
-    - [Formatting](#formatting)
+2. [CSS](#css)
+    - [Adding a stylesheet](#adding-a-stylesheet)
     - [Rule delcarations](#rule-declarations)
     - [Selectors](#selectors)
-  3. [Ruby](#ruby)
+    - [Media queries](#media-queries)
+3. [Ruby](#ruby)
     - [Ruby basics](#ruby-basics)
     - [Data types](#data-types)
     - [Complex data stores](#complex-data-stores)
     - [Logical operators](#logical-operators)
     - [Logic and conditions](#logic-and-conditions)
     - [Methods](#methods)
-  4. [Sinatra](#sinatra)
+4. [Sinatra](#sinatra)
     - [Defining URLs](#defining-urls)
     - [Using a layout](#using-a-layout)
     - [Instance variables](#instance-variables)
@@ -29,14 +30,14 @@ This is a cheat sheet I developed for students while teaching an [Intro to Web D
     - [Form data](#form-data)
     - [Sessions](#sessions)
     - [Interactive console (tux)](#interactive-console-tux)
-  5. [ActiveRecord](#activerecord)
-    - [Defining a new class/object](#defining-a-new-class-object)
+5. [ActiveRecord](#activerecord)
+    - [Defining a new class/object](#defining-a-new-classobject)
     - [Built-in methods](#built-in-methods)
     - [Defining relationships](#defining-relationships)
     - [Model validations](#model-validations)
     - [Updating values](#updating-values)
-  6. [Git](#git)
-  7. [Heroku](#heroku)
+6. [Git](#git)
+7. [Heroku](#heroku)
 
 
 ## HTML
@@ -207,7 +208,7 @@ first_value = true
 second_value = false
 ```
 
-## Complex data stores
+### Complex data stores
 
 When needed, you can also store data in more complicated ways. For instance, maybe you need to create a list of things, well, Ruby makes that easy! You can use an array to store any number of things (and each thing can be of a different type - i.e. a string, then an integer, then a float).
 
