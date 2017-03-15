@@ -1,6 +1,6 @@
 # Sinatra & Web Development Cheat Sheet
 
-This is a cheat sheet I developed for students while teaching an [Intro to Web Development](https://www.lighthouselabs.ca/intro-to-web) course through [Lighthouse Labs](https://www.lighthouselabs.ca). If you're interested in learning to code, you should definitely check them out.
+This cheat sheet was developed by Lighthouse Labs instructor [Matt Hennessy](https://github.com/matt297/sinatra-dev-cheatsheet) – thank you Matt!
 
 ## Table of Contents
 
