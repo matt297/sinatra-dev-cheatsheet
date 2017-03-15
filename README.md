@@ -4,23 +4,24 @@ This is a cheat sheet I developed for students while teaching an [Intro to Web D
 
 ## Table of Contents
 
-  1. [HTML](#html)
+1. [HTML](#html)
     - [Basic page structure](#basic-page-structure)
     - [Formatting tags](#formatting-tags)
     - [Content tags](#content-tags)
     - [Structural tags](#structural-tags)
-  1. [CSS](#css)
-    - [Formatting](#formatting)
+2. [CSS](#css)
+    - [Adding a stylesheet](#adding-a-stylesheet)
     - [Rule delcarations](#rule-declarations)
     - [Selectors](#selectors)
-  1. [Ruby](#ruby)
-    - [Ruby bascis](#ruby-basics)
+    - [Media queries](#media-queries)
+3. [Ruby](#ruby)
+    - [Ruby basics](#ruby-basics)
     - [Data types](#data-types)
     - [Complex data stores](#complex-data-stores)
     - [Logical operators](#logical-operators)
     - [Logic and conditions](#logic-and-conditions)
     - [Methods](#methods)
-  1. [Sinatra](#sinatra)
+4. [Sinatra](#sinatra)
     - [Defining URLs](#defining-urls)
     - [Using a layout](#using-a-layout)
     - [Instance variables](#instance-variables)
@@ -29,14 +30,14 @@ This is a cheat sheet I developed for students while teaching an [Intro to Web D
     - [Form data](#form-data)
     - [Sessions](#sessions)
     - [Interactive console (tux)](#interactive-console-tux)
-  1. [ActiveRecord](#activerecord)
-    - [Defining a new class/object](#defining-a-new-class-object)
+5. [ActiveRecord](#activerecord)
+    - [Defining a new class/object](#defining-a-new-classobject)
     - [Built-in methods](#built-in-methods)
     - [Defining relationships](#defining-relationships)
     - [Model validations](#model-validations)
     - [Updating values](#updating-values)
-  1. [Git](#git)
-  1. [Heroku](#heroku)
+6. [Git](#git)
+7. [Heroku](#heroku)
 
 
 ## HTML
@@ -84,10 +85,10 @@ These tags are used to insert interactive and fun elements into your page (so th
 
 | HTML Tag | Purpose | Needs Closing Tag | Info/Example |
 | -------- | ------- | -------------------- | --------- |
-| `<a href="http://google.com">Link text</a>` | Link to another page | Yes | [Link](http://www.w3schools.com/tags/tag_a.asp) |
+| `<a href="http://google.com">Link to Google</a>` | Link to another page | Yes | [Link](http://www.w3schools.com/tags/tag_a.asp) |
 | `<img src="http://google.com/image.jpg">` | Displays an image | No | [Link](http://www.w3schools.com/tags/tag_img.asp) |
 | `<form action="/process" method="POST">` | A form | Yes | [Link](http://www.w3schools.com/tags/tag_form.asp) |
-| `<input type="text">` | An input field | No | [Link](http://www.w3schools.com/tags/tag_input.asp) |
+| `<input type="text">` | A generic input field | No | [Link](http://www.w3schools.com/tags/tag_input.asp) |
 | `<input type="password">` | A password field | No | [Link](http://www.w3schools.com/tags/tag_input.asp) |
 | `<input type="email">` | An email field | No | [Link](http://www.w3schools.com/tags/tag_input.asp) |
 | `<label>` | Input field label | No | [Link](http://www.w3schools.com/tags/tag_label.asp) |
@@ -140,7 +141,7 @@ A “rule declaration” is the name given to a selector (or a group of selector
 
 ### Selectors
 
-Within a rule declaration, you can target an element (tell the browser what to apply those styles to) in a few different ways.
+Within a rule declaration, you can target an element (tell the browser what to apply particular styles to) in a few different ways.
 
 | Selector | Example | Description | Info/Example |
 | -------- | ------- | ----------- | --------- |
@@ -151,7 +152,7 @@ Within a rule declaration, you can target an element (tell the browser what to a
 
 ### Media queries
 
-To apply different styles for different screen sizes (i.e. mobile device vs. a desktop computer), you can use media queries. The most common ways to use media queries is to specify a `min-width`, a `max-width`, or both together.
+To apply different styles for different screen sizes (i.e. mobile device vs. desktop computer), you can use media queries. The most common ways to use media queries is to specify a `min-width`, a `max-width`, or both together.
 
 ```css
 @media (min-width: 992px) {
@@ -207,13 +208,13 @@ first_value = true
 second_value = false
 ```
 
-## Complex data stores
+### Complex data stores
 
 When needed, you can also store data in more complicated ways. For instance, maybe you need to create a list of things, well, Ruby makes that easy! You can use an array to store any number of things (and each thing can be of a different type - i.e. a string, then an integer, then a float).
 
 ```ruby
 # Create an array (list of things of any types)
-grocery_list = ['Potatoes', 'Bread', 'Milk', 'Butter']
+grocery_list = ["Potatoes", "Bread", "Milk", "Butter"]
 
 # To get the first item from the list (returns "Potatoes")
 grocery_list[0]
@@ -226,16 +227,16 @@ For groups of related data, you can also use a hash as a different way to store 
 
 ```ruby
 # Create hash
-person = { name: 'Matt, age: 99, favourite_book: 'Harry Potter', favourite_movie: 'Inception' }
+person = { name: "Matt", age: 99, favourite_book: "Harry Potter", favourite_movie: "Inception" }
 
 # Get the person's name (returns "Matt")
-person['name']
+person["name"]
 ```
 
 
 ### Logical operators
 
-When performing logic, ruby always returns one of two things: `true` or `false`. That makes it easy for us to build programs around this behaviour. To do logic, you use operators, which are listed in the table below.
+When performing logic, Ruby always returns one of two things: `true` or `false`. That makes it easy for us to build programs around this behaviour. To do logic, you use operators, which are listed in the table below.
 
 | Operator | Description | Info/Example |
 | -------- | ----------- | ------------ |
@@ -259,7 +260,7 @@ variable_one == variable_two && variable_three != variable_four
 
 ### Logic and conditions
 
-Often times when programming, we need to perform logic, or create a set of conditions for a particular thing to happen. In ruby, this can be done in a variety of ways. The most common, is using an if/else block.
+Often times when programming, we need to perform logic, or create a set of conditions for a particular thing to happen. In Ruby, this can be done in a variety of ways. The most common is using an if/else block.
 
 ```ruby
 # Simple with only one condition
@@ -287,7 +288,7 @@ end
 
 ### Methods
 
-In programming, you often need to re-use code multiple times. Whenver this needs to be done, you put that code inside of a method, and then you can simply run the method whenver you need that code. Methods can either accept arguments (i.e. take in values and then do something with those values), or accept no arguments (i.e. if you just want to print out something). To define a method, you use the `def` and `end` keywords.
+In programming, you often need to re-use code multiple times. Whenver this needs to be done, you put that code inside of a method, and then you can simply run the method whenver you need that code. Methods can either accept arguments (i.e. take in values and then do something with those values), or accept no arguments (for example if you just want to print out something). To define a method, you use the `def` and `end` keywords.
 
 Remember, in Ruby, the last line of a method is automatically returned as the final value.
 
@@ -305,7 +306,7 @@ def multiply(first_number, second_number)
   first_number * second_number
 end
 
-# Run the method (returns "25")
+# Run the method (returns 25)
 multiply(5,5)
 
 ```
@@ -313,7 +314,7 @@ multiply(5,5)
 
 ## Sinatra
 
-In Sinatra, there are two primary types of files: ruby files (ending in `.rb`, only containing Ruby code), and embedded ruby files (ending in `.erb` and combining both HTML + Ruby code). ERB files are usually found in the `app/views/` folder, while Ruby files can be found in `app/` or `app/models/`. 
+In Sinatra, there are two primary types of files: Ruby files (ending in `.rb`, only containing Ruby code), and embedded ruby files (ending in `.erb` and combining both HTML and Ruby code). ERB files are usually found in the `app/views/` folder, while Ruby files can usually be found in `app/` or `app/models/`.
 
 
 ### Defining URLs
@@ -334,11 +335,11 @@ Using the code above, your site visitor would just see a blank page, because you
 
 ```ruby
 get '/' do
-  erb(:homepage) # Sinatra will now render the 'homepage.erb' file when a user visits 'yoursite.com/'
+  erb(:homepage) # Sinatra will now render the 'app/views/homepage.erb' file when a user visits 'yoursite.com/'
 end
 ```
 
-You can also pass values into your `actions.rb` file by using variables in the URL. When you create variables in the URL, you can then get to them from within ruby using `params[:variable_name]`, like you do for form data. For instance, perhaps you wanted to edit a particular user. You might want to have unique edit links for each user, so you can pass them around between the various website administrators. Your `actions.rb` file might look like this:
+You can also pass values into your `actions.rb` file by using variables in the URL. When you create variables in the URL, you can then get to them from within Ruby using `params[:variable_name]`, like you do for form data. For instance, perhaps you wanted to edit a particular user. You might want to have unique edit links for each user, so you can pass them around between the various website administrators. Your `actions.rb` file might look like this:
 
 ```ruby
 get '/user/:id/edit` do
@@ -349,7 +350,7 @@ end
 
 ### Using a layout
 
-Often times, websites will have a consistent header and footer that are shown on every page. In Sinatra, the way you accomplish this is by creating a `layout.erb` file. The contents of this file will be displayed on every single page of your app, so that each page has a consistent look and feel. In your `layout.erb` file, you also need to specify where the contents of each page go, and you do that using the `<%= yield %>` tag. Here is a sample layout file...
+Often times, websites will have a consistent header and footer that are shown on every page. In Sinatra, the way you accomplish this is by creating a `layout.erb` file. The contents of this file will be displayed on every single page of your app, so that each page has a consistent look and feel. In your `layout.erb` file, you also need to specify where the contents of each page go, and you do that using the `<%= yield %>` tag. Here is a sample layout file:
 
 ```html
 <!doctype html>
@@ -442,7 +443,7 @@ end
 
 ### Helper methods
 
-When you create a method, typically it's only meant for use within your ruby files. But, Sinatra has a nifty way for you to create methods that you can also use within your view files (ERB). They are called helper methods, and here's how you use them:
+When you create a method, typically it's only meant for use within your Ruby files. But, Sinatra has a nifty way for you to create methods that you can also use within your view files (ERB). They are called helper methods, and here's how you use them:
 
 ```ruby
 # In actions.rb
@@ -450,9 +451,9 @@ When you create a method, typically it's only meant for use within your ruby fil
 helpers do
   def time_of_day
     if Time.now.hour < 12
-      'Morning'
+      'morning'
     else
-      'Afternoon'
+      'afternoon'
     end
   end
 end
@@ -471,7 +472,7 @@ Hello there! Welcome and good <%= time_of_day %> to you!
 
 ### Form data
 
-When you want to get user input, you use a form. Sinatra has some fun and helpful ways to let us easily access form data submitted by a user! To start, you define a form in your erb file, making sure to specify a `method` and an `action`. The method represents _how_ the data will be sent, and the action represents _where_ the data will be sent.
+When you want to get user input, you use a form. Sinatra has some fun and helpful ways to let us easily access form data submitted by a user! To start, you define a form in your ERB file, making sure to specify a `method` and an `action`. The method represents _how_ the data will be sent, and the action represents _where_ the data will be sent.
 
 | Method | Description | When to use |
 | ------ | ----------- | ----------- |
@@ -482,8 +483,8 @@ Inside an ERB file, a form would look like this:
 
 ```html
 <form method="post" action="/signup">
-  <label for="first-name">
-  <input type="text" name="first-name" id="first-name">
+  <label for="first_name">
+  <input type="text" name="first_name" id="first_name">
   
   <button>Submit</button>
 </form>
@@ -493,14 +494,14 @@ Then, in your `actions.rb` file, you would create a new URL that accepts incomin
 
 ```ruby
 post '/signup' do
-  @name = params[:name]
+  @name = params[:first_name]
 end
 ```
 
 
 ### Sessions
 
-Sessions are a quick and easy way to store data that lasts for more than a single page-load. Remember that anything stored in a session is available for the entire duration of a users browsing session. We use ruby to interact with sessions, like so:
+Sessions are a quick and easy way to store data that lasts for more than a single page-load. Remember that anything stored in a session is available for the entire duration of a user's browsing session. We use Ruby to interact with sessions, like so:
 
 ```ruby
 # Set a session value
@@ -519,7 +520,7 @@ session.clear
 
 ### Interactive console (tux)
 
-To start up the interactive console in Sinatra, you type `bundle exec tux` in a bash window/tab. If it worked, you should see something like:
+To start up the interactive console in Sinatra, you type `bundle exec tux` in a terminal (bash) window/tab. If it worked, you should see something like:
 
 ```
 Loading development environment (Rack 1.3)
@@ -550,11 +551,11 @@ ActiveRecord provides you with a variety of methods that make it easy to interac
 | Method | Example | Description | Return type |
 | ------ | ------- | ----------- | --------- |
 | `.find` | `User.find(5)` | Finds the object with the specified ID | Single object |
-| `.where` | `User.where(name: 'Matt')` | Finds the object that matches the filters you provided (i.e. where the name is "Matt") | Array of objects |
-| `.first` | `User.first` | Gets the first object in the database | Single object |
-| `.last` | `User.last` | Gets the last object in the database | Single object |
+| `.where` | `User.where(name: 'Matt')` | Finds the objects that match the filters you provided (i.e. where the name is "Matt") | Array of objects |
+| `.first` | `User.first` | Gets the first object in the database table | Single object |
+| `.last` | `User.last` | Gets the last object in the database table | Single object |
 | `.new` | `User.new(name: 'Matt')` | Creates a new instance of the user class (doesn't save to the database) | Single object |
-| `.create` | `User.create(name: 'Matt')` | Creates and *SAVES* a new instance of the user class to the database (you know it's saved because it will have an ID) | Single object |
+| `.create` | `User.create(name: 'Matt')` | Creates and *saves* a new instance of the user class to the database (you know it's saved because it will have an ID) | Single object |
 | `.save` | `User.new(name: 'Matt').save` | Saves your changes to the database | `true`/`false` |
 
 
@@ -573,7 +574,8 @@ class Post < ActiveRecord::Base
 end
 ```
 
-Once you have the association setup, you can then easily get a lists of all the posts that a user has created by doing something like this...
+Once you have the association setup, you can then easily get a lists of all the posts that a user has created by doing something like this:
+
 ```ruby
 # Find a user
 user = User.find(5)
@@ -591,12 +593,12 @@ post.user
 
 ### Model validations
 
-ActiveRecord provides us with convenient ways to add validations to our classes/models. When a validation is in place, a new record in the database cannot be created/edited/saved unless it passes all of our validations! To define a validation, you specify it on the model/class:
+ActiveRecord provides us with convenient ways to add validations to our classes/models. When a validation is in place, a new record in the database cannot be created, edited or saved unless it passes all of our validations! To define a validation, you specify it on the model/class:
 
 ```ruby
 class User < ActiveRecord::Base
 
-  # Every user must have a name and email
+  # Every user must have a name and an email
   validates_presence_of :name, :email
   
   # The same email can't belong to multiple users
@@ -605,7 +607,7 @@ class User < ActiveRecord::Base
 end
 ```
 
-To check if a particular instance of the `User` class passes validation, you could try creating a new one, then using the `.valid?` method (which returns `true`/`false`). Here is what you might do after someone submits a signup form:
+To check if a particular instance of the `User` class passes validation, you could try creating a new one, then use the `.valid?` method (which returns `true`/`false`). Here is what you might do after someone submits a signup form:
 
 ```ruby
 # In actions.rb
