@@ -664,7 +664,7 @@ git commit -m "Description of your changes."
 
 **Step 4:** Push your changes to GitHub
 ```
-git push origin/master
+git push origin master
 ```
 
 
